@@ -58,9 +58,6 @@ body{
     align-items: center;
     justify-content: flex-start;
 }
-.botoes br{
-    display: none; 
-}
 #caixas{
     display: flex;
     justify-content: center; 
