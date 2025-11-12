@@ -8,8 +8,14 @@ function urgente()
     novanota=document.createElement("li")
     novanota.id="listaurgente"
     novanota.innerHTML=nota=document.getElementById("nota").value
+    if(getElementById("novanota").value=""){
+        alert("Escreva algo")
+    }
     var div=document.getElementById("urgente")
     div.appendChild(novanota)
+    if(getElementById("novanota").value==""){
+        alert("Escreva algo")
+    }
 }
 function naourgente()
 {
@@ -17,6 +23,9 @@ function naourgente()
     novanota=document.createElement("li")
     novanota.id="listanaourgente"
     novanota.innerHTML=nota=document.getElementById("nota").value
+    if(getElementById("novanota").value==""){
+        alert("Escreva algo")
+    }
     var div=document.getElementById("naourgente")
     div.appendChild(novanota)
 }
