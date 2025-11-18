@@ -24,24 +24,21 @@ function naourgente(){
   var ul=document.getElementById("listanaourgente")
     ul.appendChild(novanota)
 }
-function removerurg()
-{
-    var li=document.getElementById("listaurgente")
-    if(li){
-        li.remove()
-    }else{
-    alert("Não há texto para remover")    
+function removerurg() {
+    const lista = document.getElementById("listaurgente");
+
+    if (lista.lastElementChild) {
+        lista.removeChild(lista.lastElementChild);
     }
 }
-function removernurg()
-{
-    var li=document.getElementById("listanaourgente")
-    if(li){
-        li.remove()
-    }else{
-    alert("Não há texto para remover")    
+function removernurg() {
+    const lista = document.getElementById("listanaourgente");
+
+    if (lista.lastElementChild) {
+        lista.removeChild(lista.lastElementChild);
     }
 }
+
 function removertudo()
 {
     var li=document.getElementById("urgente")
