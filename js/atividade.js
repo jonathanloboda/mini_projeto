@@ -30,6 +30,9 @@ function removerurg() {
     if (lista.lastElementChild) {
         lista.removeChild(lista.lastElementChild);
     }
+    else{
+        alert("Não há texto para remover.")
+    }
 }
 function removernurg() {
     const lista = document.getElementById("listanaourgente");
@@ -37,15 +40,17 @@ function removernurg() {
     if (lista.lastElementChild) {
         lista.removeChild(lista.lastElementChild);
     }
+    else{
+        alert("Não há texto para remover.")
+    }
 }
-
 function removertudo()
 {
-    var li=document.getElementById("urgente")
+    var li=document.getElementById("listaurgente")
     li.innerHTML=""
 }
 function removertudon()
 {
-    var li=document.getElementById("naourgente")
+    var li=document.getElementById("listanaourgente")
     li.innerHTML=""
 }
