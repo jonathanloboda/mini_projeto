@@ -1,33 +1,28 @@
 var nota=document.getElementById("nota").value
 
-
-
-function urgente()
-{
+function urgente(){
     var novanota, nota
     novanota=document.createElement("li")
     novanota.id="listaurgente"
-    novanota.innerHTML=nota=document.getElementById("nota").value
-    if(getElementById("novanota").value=""){
-        alert("Escreva algo")
+    novanota.innerText=nota=document.getElementById("nota").value
+    if(nota==""){
+        alert("Digite uma nota antes de adicionar")
+        return
     }
-    var div=document.getElementById("urgente")
-    div.appendChild(novanota)
-    if(getElementById("novanota").value==""){
-        alert("Escreva algo")
-    }
+    var ul=document.getElementById("listaurgente")
+    ul.appendChild(novanota)
 }
-function naourgente()
-{
+function naourgente(){
     var novanota, nota
     novanota=document.createElement("li")
     novanota.id="listanaourgente"
-    novanota.innerHTML=nota=document.getElementById("nota").value
-    if(getElementById("novanota").value==""){
-        alert("Escreva algo")
+    novanota.innerText=nota=document.getElementById("nota").value
+    if(nota==""){
+        alert("Digite uma nota antes de adicionar")
+        return
     }
-    var div=document.getElementById("naourgente")
-    div.appendChild(novanota)
+  var ul=document.getElementById("listanaourgente")
+    ul.appendChild(novanota)
 }
 function removerurg()
 {
